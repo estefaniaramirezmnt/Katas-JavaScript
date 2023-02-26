@@ -1,4 +1,4 @@
-// Create a function that convert these numbers in a string to an array
+// Create a function that convert this string of numbers to an array
 function extractNumbers(nums) {
     return nums.split(' ').map(Number);
 }
