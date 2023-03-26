@@ -7,4 +7,4 @@ function solution(str) {
     return result;
 }
 
-console.log(solution("culo"))
+console.log(solution("food"))
