@@ -1,5 +1,4 @@
 /* Replace the numbers below to 5 with a 0 and above with 1.
-
 */
 function fakeBin(x) {
     let newStr = ''
