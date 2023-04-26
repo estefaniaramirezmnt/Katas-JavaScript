@@ -22,14 +22,3 @@ var max2 = function(list){
     list.sort((a, b) => (b - a));
     return list[0];
 }
-
-
-
-
-var min3 = function(list){
-    return Math.min.apply(null,list);
-}
-
-var max3 = function(list){
-    return Math.max.apply(null,list);
-}
