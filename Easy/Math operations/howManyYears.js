@@ -12,7 +12,7 @@ It will take 15 years.
 All numbers have to be integers. 
 */
 
-function nbYear(p0, percent, aug, p) {
+function howManyYears(p0, percent, aug, p) {
     percent = percent/100
     let currentPopulation = p0 + p0*percent + aug;
     let years = 1;
@@ -23,3 +23,4 @@ function nbYear(p0, percent, aug, p) {
     return Math.ceil(years)
 }
 
+module.exports = howManyYears;
