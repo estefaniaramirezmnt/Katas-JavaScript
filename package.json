@@ -1,0 +1,23 @@
+{
+  "name": "katas-javascript",
+  "version": "1.0.0",
+  "description": "Here I will be uploading the JavaScript practice exercises. If you need to run them, you can copy them into your Visual Studio Code. I recommend you to have the Code Runner extension.\r Thank you for reading me!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estefaniaramirezmnt/Katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estefaniaramirezmnt/Katas/issues"
+  },
+  "homepage": "https://github.com/estefaniaramirezmnt/Katas#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
