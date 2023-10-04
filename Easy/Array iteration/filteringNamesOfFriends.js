@@ -3,7 +3,7 @@
 function friend (friends) {
     let listOfFriends = [];
     for (let person of friends) {
-        if (person.length == 4) {
+        if (person.length === 4) {
             listOfFriends.push(person)
         }
     }
@@ -14,6 +14,3 @@ function friend (friends) {
 function friend2(friends){
     return friends.filter(n => n.length === 4)
 }
-
-
-console.log(friend(["Love", "Your", "Face", "1"]))

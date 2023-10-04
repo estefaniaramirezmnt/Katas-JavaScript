@@ -5,6 +5,8 @@ function grow(x) {
     }
     return result;
 }
+// As result is x[0], the value of i starts at 1, not 0.
+// If i = 0, we would be multiplying the first element of the array by itself.
 
 function grow2(x) {
     return x.reduce((a,b)=>a*b);

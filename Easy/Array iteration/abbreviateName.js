@@ -5,3 +5,5 @@ function abbrevName(name){
     return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
   }
 
+var myName = "Estefanía Ramírez";
+console.log(abbrevName(myName));

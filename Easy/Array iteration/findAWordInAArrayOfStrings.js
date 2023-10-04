@@ -8,14 +8,8 @@ function findNeedle(haystack) {
     }
 }
 
-var test1 = findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "randomJunk", "needle"]);
-console.log(test1)
-
-
 function findNeedle2(array) {
     return `found the needle at position ${array.indexOf("needle")}`
 }
 
-var test2 = findNeedle2(["hay", "junk", "hay", "hay", "moreJunk", "randomJunk", "needle"]);
-console.log(test2)
 

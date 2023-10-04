@@ -11,8 +11,10 @@ function check(a, x) {
 console.log(check([101, 45, 75, 105, 99, 107], 107))
 console.log(check(['what', 'a', 'great', 'kata'], 'kat'))
 
-
 function check2(a,x){
     return a.includes(x);
 };
+
+console.log(check2([101, 45, 75, 105, 99, 107], 107))
+console.log(check2(['what', 'a', 'great', 'kata'], 'kat'))
 // another way to code it: const check = (a,x) => a.includes(x);
