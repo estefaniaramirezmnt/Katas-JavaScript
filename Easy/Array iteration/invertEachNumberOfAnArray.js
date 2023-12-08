@@ -1,4 +1,4 @@
-// Given an array, invert the positiv integers into negative and viceversa
+// Given an array, invert the positive integers into negative and viceversa
 
 function invert(array) {
     let newArray = [];

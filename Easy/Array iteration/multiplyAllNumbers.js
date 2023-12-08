@@ -11,3 +11,6 @@ function grow(x) {
 function grow2(x) {
     return x.reduce((a,b)=>a*b);
 }
+
+var test = [1, 2, 3, 4];
+console.log(grow2(test)); // 24
