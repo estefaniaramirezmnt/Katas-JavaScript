@@ -14,3 +14,6 @@ function friend (friends) {
 function friend2(friends){
     return friends.filter(n => n.length === 4)
 }
+
+var test = ["Ryan", "Kieran", "Jason", "Yous"]
+console.log(friend(test)) // ["Ryan", "Yous"]

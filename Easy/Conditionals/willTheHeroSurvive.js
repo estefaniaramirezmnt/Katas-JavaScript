@@ -7,3 +7,6 @@ function hero(bullets, dragons){
 
 console.log(hero(10, 5)) // true
 console.log(hero(7, 4)) // false
+
+
+

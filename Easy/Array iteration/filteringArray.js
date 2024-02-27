@@ -33,4 +33,4 @@ function filter_list4(l) {
 }
 
 var test = [1, 2, 3, "a", "b", 4];
-console.log(filter_list3(test)); // [1, 2, 3, 4]
+console.log(filter_list(test)); // [1, 2, 3, 4]
