@@ -17,4 +17,16 @@ function check2(a,x){
 
 console.log(check2([101, 45, 75, 105, 99, 107], 107))
 console.log(check2(['what', 'a', 'great', 'kata'], 'kat'))
-// another way to code it: const check = (a,x) => a.includes(x);
+
+
+const checkTheValue = (array, value) => {
+    for (let valueOfArray of array) {
+        if (valueOfArray === value) {
+            return `${true}, ${valueOfArray} is in the array`;
+        } else {
+            return `${false}, ${value} is not in the array`;
+        }
+    }
+}
+
+console.log(checkTheValue([101, 45, 75, 105, 99, 107], 107))

@@ -7,3 +7,11 @@ function abbrevName(name){
 
 var myName = "Estefanía Ramírez";
 console.log(abbrevName(myName));
+
+function abbrevName2(hereTheName) {
+  var arrOfName = hereTheName.split(" ");
+  var result = `${arrOfName[0][0]}.${arrOfName[1][0]}`
+  return result;
+}
+
+console.log(abbrevName2(myName))
