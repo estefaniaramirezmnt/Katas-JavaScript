@@ -13,7 +13,9 @@ All numbers have to be integers.
 */
 
 function howManyYears(p0, percent, aug, p) {
-    percent = percent/100
+    percent = percent/100 
+    // lo dividimos entre 100 porque es un porcentaje y queremos que sea un número decimal
+    console.log(percent)
     let currentPopulation = p0 + p0*percent + aug;
     let years = 1;
     while ( currentPopulation < p) {
@@ -23,4 +25,5 @@ function howManyYears(p0, percent, aug, p) {
     return Math.ceil(years)
 }
 
+console.log(howManyYears(1500, 5, 100, 5000)) // 15
 module.exports = howManyYears;
