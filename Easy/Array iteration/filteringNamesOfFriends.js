@@ -1,19 +1,19 @@
 // Make a list of your friends whose names have exatly 4 letters.
 
-function friend (friends) {
-    let listOfFriends = [];
-    for (let person of friends) {
-        if (person.length === 4) {
-            listOfFriends.push(person)
-        }
+const choosingFriends = (friendsList) => {
+  const newFriendList = [];
+  for (let friend of friendsList) {
+    if (friend.length === 4) {
+      newFriendList.push(friend);
     }
-    return listOfFriends
-}
+  }
+  return newFriendList;
+};
 
+const choosingFriends2 = (friendsList) => {
+  return friendsList.filter((friend) => friend.length === 4);
+};
 
-function friend2(friends){
-    return friends.filter(n => n.length === 4)
-}
-
-var test = ["Ryan", "Kieran", "Jason", "Yous"]
-console.log(friend(test)) // ["Ryan", "Yous"]
+var test = ["Hornet", "Álvaro", "Luis", "Fire", "Dome", "Luisa", "Mel", "Marta", "Jess"];
+console.log(choosingFriends(test)); 
+console.log(choosingFriends2(test));
