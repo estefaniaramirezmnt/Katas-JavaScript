@@ -22,6 +22,42 @@ function countPositivesSumNegatives(input) {
     return [positiveNumbers, negativeSum]
 }
 
-const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
-const result = countPositivesSumNegatives(input);
-console.log(result); // [10, -65]
+const sumAndCount1 = (arrayOfIntegers) => {
+    const countOfPositives = arrayOfIntegers.filter((number) => number > 0).length;
+    const sumOfNegatives = arrayOfIntegers.filter((number) => number < 0).reduce((acc, number) => acc + number, 0);
+    return [countOfPositives, sumOfNegatives];
+}
+
+function sumAndCount2(arrayOfIntegers) {
+    if (arrayOfIntegers === null || arrayOfIntegers.lenght === 0) {
+        return [];
+    } else {
+        let countOfPositives = 0;
+        let sumOfnegatives = 0;
+        arrayOfIntegers.forEach((number) => {
+            if (number > 0) {
+                countOfPositives++;
+            } else if (number < 0) {
+                sumOfnegatives += number;
+            }
+        });
+        return [countOfPositives, sumOfnegatives];
+    }
+}
+
+function sumAndCount3(arrayOfIntegers) {
+    if (arrayOfIntegers === null || arrayOfIntegers.lenght === 0) {
+        return [];
+    } else {
+        let countOfPositives = 0;
+        let sumOfnegatives = 0;
+        for (let integer of arrayOfIntegers) {
+            if (integer > 0) {
+                countOfPositives++;
+            } else {
+                sumOfnegatives += integer;
+            }
+        }
+        return [countOfPositives, sumOfnegatives];
+    }
+}

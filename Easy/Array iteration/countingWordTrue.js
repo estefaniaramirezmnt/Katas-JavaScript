@@ -11,3 +11,11 @@ function countSheeps(arrayofSheeps) {
     return result;
 }
 console.log(countSheeps([true, true, true]))
+
+// with filter
+
+const ovejitas = (arreyOfOvejitas) => {
+    return arreyOfOvejitas.filter(ovejita => ovejita === true).length;
+}
+
+console.log(ovejitas([true, true, true, false, false, true]))
