@@ -25,6 +25,7 @@ function countPositivesSumNegatives(input) {
 const sumAndCount1 = (arrayOfIntegers) => {
     const countOfPositives = arrayOfIntegers.filter((number) => number > 0).length;
     const sumOfNegatives = arrayOfIntegers.filter((number) => number < 0).reduce((acc, number) => acc + number, 0);
+    /* Here, 0 is the initial value of the accumulator. If the array is empty, the function will return 0. */
     return [countOfPositives, sumOfNegatives];
 }
 
