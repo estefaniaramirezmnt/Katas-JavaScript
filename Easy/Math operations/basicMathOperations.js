@@ -20,3 +20,7 @@ function basicOp(operation, value1, value2) {
 function basicOp2(operation, value1, value2) {
     return eval(operation+value1+value2);
   }
+
+basicOp2('+', 5, 10); // 15
+// eval('+'+5+10) -> eval('+510') -> 5+10 -> 15
+// eval() function evaluates JavaScript code represented as a string
